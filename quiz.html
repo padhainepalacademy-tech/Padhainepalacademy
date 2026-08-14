@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Dashboard - Padhai Nepal Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand"><a href="index.html" class="text-white"><i class="fa-solid fa-graduation-cap"></i> Padhai Nepal Academy</a></div>
+    </div>
+  </nav>
+
+  <main class="container section">
+    <h1 class="text-center">Choose Your Quiz Category</h1>
+    
+    <div class="text-center mb-4">
+      <span class="badge badge-new">XP System Active</span>
+      <span class="badge badge-model">Maintain Streak!</span>
+      <span class="badge badge-pyq">Weekly Challenge</span>
+    </div>
+
+    <div class="grid grid-3 mt-4">
+      <div class="card quiz-card">
+        <i class="fa-solid fa-globe card-icon"></i>
+        <h3 class="card-title">🌍 General Quiz</h3>
+        <p class="card-desc">Topics: 15 | Questions: 5000+</p>
+        <a href="quiz-play.html?cat=general" class="btn btn-outline" style="width:100%; text-align:center;">Play Now</a>
+      </div>
+      <div class="card quiz-card">
+        <i class="fa-solid fa-landmark card-icon text-red"></i>
+        <h3 class="card-title">🏛️ Lok Sewa Quiz</h3>
+        <p class="card-desc">Topics: 20 | Questions: 3000+</p>
+        <a href="quiz-play.html?cat=loksewa" class="btn btn-outline" style="width:100%; text-align:center;">Play Now</a>
+      </div>
+      <div class="card quiz-card">
+        <i class="fa-solid fa-chalkboard-user card-icon text-gold"></i>
+        <h3 class="card-title">👨‍🏫 Teacher Quiz</h3>
+        <p class="card-desc">Topics: 12 | Questions: 2000+</p>
+        <a href="quiz-play.html?cat=teacher" class="btn btn-outline" style="width:100%; text-align:center;">Play Now</a>
+      </div>
+    </div>
+
+    <div class="card mt-4 text-center" style="background:#fef9e7;">
+      <h2>🌟 Daily Quiz of the Day</h2>
+      <p>Test your knowledge with today's special set of 20 questions.</p>
+      <a href="quiz-play.html?cat=daily" class="btn btn-primary">Start Daily Quiz</a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Result - Padhai Nepal Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="container section">
+    <div class="card text-center">
+      <h2 class="text-navy">Quiz Completed! 🎉</h2>
+      
+      <div class="grid grid-3 mt-4 mb-4">
+        <div style="background: var(--color-bg); padding: 20px; border-radius: 10px;">
+          <h1 id="score-display" class="text-navy">0/0</h1>
+          <p>Score</p>
+        </div>
+        <div style="background: var(--color-bg); padding: 20px; border-radius: 10px;">
+          <h1 id="xp-display" class="text-gold">0</h1>
+          <p>XP Earned</p>
+        </div>
+        <div style="background: var(--color-bg); padding: 20px; border-radius: 10px;">
+          <h1 class="text-red">92%</h1>
+          <p>Accuracy</p>
+        </div>
+      </div>
+
+      <div class="text-left mb-4">
+        <h3>Topic Analysis</h3>
+        <p>History: <span class="text-success">Strong (80%)</span></p>
+        <p>Science: <span class="text-error">Weak (40%)</span> - <em>Recommendation: Review basic science concepts.</em></p>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="quiz-play.html" class="btn btn-primary">Try Again</a>
+        <a href="dashboard.html" class="btn btn-secondary">Go to Dashboard</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const res = JSON.parse(localStorage.getItem('quizResult') || '{"score":0,"total":0,"xp":0}');
+      document.getElementById('score-display').textContent = res.score + '/' + res.total;
+      document.getElementById('xp-display').textContent = '+' + res.xp;
+    });
+  </script>
+</body>
+</html>

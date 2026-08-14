@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Play - Padhai Nepal Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="container section" id="quiz-play-container">
+    <div class="card">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h3 id="q-num">Question 1 of 20</h3>
+        <div style="font-size: 1.5rem; font-weight:bold; color: var(--color-red);">
+          <i class="fa-regular fa-clock"></i> <span id="timer-display">30s</span>
+        </div>
+      </div>
+      
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      
+      <div style="display:flex; justify-content:space-between; margin-bottom: 20px; font-size: 0.9rem;">
+        <span><i class="fa-solid fa-fire text-red"></i> Streak: <span id="streak-display">0</span></span>
+        <span><i class="fa-solid fa-star text-gold"></i> XP: <span id="xp-display">0</span></span>
+      </div>
+
+      <h2 id="question-text" style="font-size: 1.5rem; margin-bottom: 30px;">Loading question...</h2>
+
+      <div id="options" style="display: flex; flex-direction: column; gap: 10px;">
+        <!-- Options injected by JS -->
+      </div>
+      
+      <div style="margin-top: 20px; text-align:right;">
+        <button class="btn btn-outline" onclick="engine.selectAnswer(-1, null)">Skip</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/quiz-engine.js"></script>
+</body>
+</html>
