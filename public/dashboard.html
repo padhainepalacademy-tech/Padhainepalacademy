@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard - Padhai Nepal Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand"><a href="index.html" class="text-white"><i class="fa-solid fa-graduation-cap"></i> Padhai Nepal</a></div>
+      <div class="nav-links">
+        <a href="quiz.html">Quiz</a>
+        <a href="index.html">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container section">
+    <h1>Namaste, Ramesh 👋</h1>
+    <p class="text-gray">My Goal: Lok Sewa Nayab Subba</p>
+
+    <div class="grid grid-3 mt-4">
+      <div class="card" style="background: var(--color-navy); color: white;">
+        <h3>My Progress</h3>
+        <p><i class="fa-solid fa-star text-gold"></i> 4,250 XP</p>
+        <p><i class="fa-solid fa-fire text-red"></i> 12 Day Streak</p>
+      </div>
+      <div class="card">
+        <h3>My Rank</h3>
+        <h1 class="text-red">#342</h1>
+        <p>National Ranking</p>
+        <a href="rankings.html" class="text-navy">View Leaderboard</a>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--color-red);">
+        <h3>Today's Task</h3>
+        <p>Model Set #027 - 50 Questions</p>
+        <a href="quiz-play.html" class="btn btn-primary btn-sm">Start Now</a>
+      </div>
+    </div>
+
+    <div class="grid grid-2 mt-4">
+      <div>
+        <h2>⚠️ Weak Topic Alert</h2>
+        <div class="card">
+          <p>You struggled with <strong>Science & Technology</strong> in your last 3 quizzes.</p>
+          <a href="notes.html" class="btn btn-outline">Read Notes</a>
+        </div>
+      </div>
+      <div>
+        <h2>📚 My Bookmarks & Mistakes</h2>
+        <div class="card">
+          <ul>
+            <li><a href="#">View Saved Questions (12)</a></li>
+            <li><a href="#">Review Incorrect Answers</a></li>
+            <li><a href="#">My Downloaded Notes</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
